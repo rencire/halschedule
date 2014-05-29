@@ -2,7 +2,18 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 
+var argv = require('minimist')(process.argv.slice(2));
+
 out_dir = 'out';
+help = "A simple script to scrape training data from Hal Higdon's website";
+
+if ((argv.h) || (argv.help) ){
+  console.log(help);
+  process.exit(0);
+}
+
+if ((argv.out_dir)) out_dir = argv.out; 
+if ((argv.o)) out_dir = argv.o; 
 
 fs.readFile('links.json', 'utf8', function (err, data) {
   if (err) throw err;
