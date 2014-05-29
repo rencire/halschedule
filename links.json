@@ -1,0 +1,19 @@
+{
+    "full": {
+        "novice_supreme" : "http://www.halhigdon.com/training/51143/Marathon-Novice-Supreme-Training-Program",
+        "novice_1" : "http://www.halhigdon.com/training/51137/Marathon-Novice-1-Training-Program",
+        "novice_2" : "http://www.halhigdon.com/training/51138/Marathon-Novice-2-Training-Program",
+        "intermediate_1" : "http://www.halhigdon.com/training/51139/Marathon-Intermediate-1-Training-Program",
+        "intermediate_2" : "http://www.halhigdon.com/training/51140/Marathon-Intermediate-2-Training-Program",
+        "advanced_1" : "http://www.halhigdon.com/training/51141/Marathon-Advanced-1-Training-Program",
+        "advanced_2" : "http://www.halhigdon.com/training/51142/Marathon-Advanced-2-Training-Program"
+    },
+    "half": {
+        "novice_1" : "http://www.halhigdon.com/training/51131/Half-Marathon-Novice-1-Training-Program",
+        "novice_2" : "http://www.halhigdon.com/training/51312/Half-Marathon-Novice-2-Training-Program",
+        "intermediate" : "http://www.halhigdon.com/training/51132/Half-Marathon-Intermediate-Training-Program",
+        "advanced" : "http://www.halhigdon.com/training/51133/Half-Marathon-Advanced-Training-Program",
+        "walk" : "http://www.halhigdon.com/training/51134/Half-Marathon-Walk-Training-Program"
+    }
+}
+
