@@ -1,134 +1,122 @@
-{
-    "headers": [
-        "Week",
-        "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri",
-        "Sat",
-        "Sun"
-    ],
-    "rows": [
-        {
-            "Week": "1",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "3 m run",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "4 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "2",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "3 m pace",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "5 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "3",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "4 m run",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "6 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "4",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "4 m pace",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "7 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "5",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "4 m run",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "8 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "6",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "4 m pace",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "5-K Race",
-            "Sun": "cross"
-        },
-        {
-            "Week": "7",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "5 m run",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "9 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "8",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "5 m pace",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "10 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "9",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "5 m run",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "10-K Race",
-            "Sun": "cross"
-        },
-        {
-            "Week": "10",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "5 m pace",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "11 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "11",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "5 m run",
-            "Thu": "3 m run",
-            "Fri": "Rest",
-            "Sat": "12 m run",
-            "Sun": "cross"
-        },
-        {
-            "Week": "12",
-            "Mon": "Rest",
-            "Tue": "3 m run",
-            "Wed": "2 m pace",
-            "Thu": "2 m run",
-            "Fri": "Rest",
-            "Sat": "Rest",
-            "Sun": "Half Marathon"
-        }
-    ]
-}
+[
+    {
+        "Week": "1",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "3 m run",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "4 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "2",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "3 m pace",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "5 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "3",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "4 m run",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "6 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "4",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "4 m pace",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "7 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "5",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "4 m run",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "8 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "6",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "4 m pace",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "5-K Race",
+        "Sun": "cross"
+    },
+    {
+        "Week": "7",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "5 m run",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "9 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "8",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "5 m pace",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "10 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "9",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "5 m run",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "10-K Race",
+        "Sun": "cross"
+    },
+    {
+        "Week": "10",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "5 m pace",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "11 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "11",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "5 m run",
+        "Thu": "3 m run",
+        "Fri": "Rest",
+        "Sat": "12 m run",
+        "Sun": "cross"
+    },
+    {
+        "Week": "12",
+        "Mon": "Rest",
+        "Tue": "3 m run",
+        "Wed": "2 m pace",
+        "Thu": "2 m run",
+        "Fri": "Rest",
+        "Sat": "Rest",
+        "Sun": "Half Marathon"
+    }
+]

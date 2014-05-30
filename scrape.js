@@ -28,7 +28,7 @@ var dl_all = function(err, data) {
         var file_name = out_dir + '/' + race_type + '_' + training_type + '.json';
 
         scrape_table(url_link, (function(file){
-          return function(json){
+          return function(json_table){
             fs.writeFile(file, JSON.stringify(json_table, null, 4), function(err){
               console.log( file + ' sucessfully written');
             });         
@@ -70,8 +70,6 @@ var scrape_table = function(url, callback) {
     if(!error){
       var $ = cheerio.load(html);
 
-      json_table = { headers : "", rows : "" }
-
       rows = []
       $('.table-training tbody tr').filter(function(i){
         if(i === 0){
@@ -79,7 +77,6 @@ var scrape_table = function(url, callback) {
           $(this).children().each(function(){
             column_header = $(this).text();
             table_headers.push(column_header);
-            json_table.headers = table_headers;
           });
         } else{
           json_row = {}
@@ -93,44 +90,7 @@ var scrape_table = function(url, callback) {
         }
       });
 
-      json_table.rows = rows;
-
-      callback(json_table);
-    }
-  });
-};
-
-var scrape_table_sync = function(url) {
-  request(url, function(error, response, html){
-    if(!error){
-      var $ = cheerio.load(html);
-
-      json_table = { headers : "", rows : "" }
-
-      rows = []
-      $('.table-training tbody tr').filter(function(i){
-        if(i === 0){
-          table_headers = []
-          $(this).children().each(function(){
-            column_header = $(this).text();
-            table_headers.push(column_header);
-            json_table.headers = table_headers;
-          });
-        } else{
-          json_row = {}
-          $(this).children().each(function(i){
-            cell_data = $(this);
-            column_header = table_headers[i];
-            json_row[column_header] = cell_data.text();
-
-          });
-          rows.push(json_row);
-        }
-      });
-
-      json_table.rows = rows;
-
-      return json_table;
+      callback(rows);
     }
   });
 };
