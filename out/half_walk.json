@@ -1,111 +1,116 @@
-[
-    {
-        "Pace": "Stroll",
-        "Description": "\"Window shopping\" walking",
-        "Breathing": "Normal",
-        "How to Do It": "Enjoy your walk"
-    },
-    {
-        "Pace": "Easy",
-        "Description": "Continuous comfortable walking",
-        "Breathing": "Almost Normal",
-        "How to Do It": "Move somewhat faster"
-    },
-    {
-        "Pace": "Brisk",
-        "Description": "Walking with real purpose",
-        "Breathing": "Harder, but still conversational",
-        "How to Do It": "Quicker-than-normal steps"
-    },
-    {
-        "Pace": "Week",
-        "Description": "Mon",
-        "Breathing": "Tue",
-        "How to Do It": "Wed",
-        "undefined": "Sun"
-    },
-    {
-        "Pace": "1",
-        "Description": "Rest",
-        "Breathing": "30 min easy",
-        "How to Do It": "20 min stroll",
-        "undefined": "3 m easy"
-    },
-    {
-        "Pace": "2",
-        "Description": "Rest",
-        "Breathing": "30 min easy",
-        "How to Do It": "20 min stroll",
-        "undefined": "3 m easy"
-    },
-    {
-        "Pace": "3",
-        "Description": "Rest",
-        "Breathing": "35 min easy",
-        "How to Do It": "20 min stroll",
-        "undefined": "2 m brisk"
-    },
-    {
-        "Pace": "4",
-        "Description": "Rest",
-        "Breathing": "35 min easy",
-        "How to Do It": "25 min stroll",
-        "undefined": "5 m easy"
-    },
-    {
-        "Pace": "5",
-        "Description": "Rest",
-        "Breathing": "35 min easy",
-        "How to Do It": "25 min stroll",
-        "undefined": "6 m easy"
-    },
-    {
-        "Pace": "6",
-        "Description": "Rest",
-        "Breathing": "40 min easy",
-        "How to Do It": "25 min stroll",
-        "undefined": "4 m brisk"
-    },
-    {
-        "Pace": "7",
-        "Description": "Rest",
-        "Breathing": "40 min easy",
-        "How to Do It": "25 min stroll",
-        "undefined": "7 m easy"
-    },
-    {
-        "Pace": "8",
-        "Description": "Rest",
-        "Breathing": "40 min easy",
-        "How to Do It": "25 min stroll",
-        "undefined": "8 m easy"
-    },
-    {
-        "Pace": "9",
-        "Description": "Rest",
-        "Breathing": "45 min easy",
-        "How to Do It": "30 min stroll",
-        "undefined": "6 m brisk"
-    },
-    {
-        "Pace": "10",
-        "Description": "Rest",
-        "Breathing": "45 min easy",
-        "How to Do It": "30 min stroll",
-        "undefined": "9 m easy"
-    },
-    {
-        "Pace": "11",
-        "Description": "Rest",
-        "Breathing": "45 min easy",
-        "How to Do It": "30 min stroll",
-        "undefined": "10 m easy"
-    },
-    {
-        "Pace": "12",
-        "Description": "Rest",
-        "Breathing": "30 min easy",
-        "How to Do It": "20 min stroll",
-        "undefined": "Half Marathon"
-    }
-]
+{
+    "type": "half",
+    "level": "walk",
+    "num_days": 112,
+    "rows": [
+        {
+            "Pace": "Stroll",
+            "Description": "\"Window shopping\" walking",
+            "Breathing": "Normal",
+            "How to Do It": "Enjoy your walk"
+        },
+        {
+            "Pace": "Easy",
+            "Description": "Continuous comfortable walking",
+            "Breathing": "Almost Normal",
+            "How to Do It": "Move somewhat faster"
+        },
+        {
+            "Pace": "Brisk",
+            "Description": "Walking with real purpose",
+            "Breathing": "Harder, but still conversational",
+            "How to Do It": "Quicker-than-normal steps"
+        },
+        {
+            "Pace": "Week",
+            "Description": "Mon",
+            "Breathing": "Tue",
+            "How to Do It": "Wed",
+            "undefined": "Sun"
+        },
+        {
+            "Pace": "1",
+            "Description": "Rest",
+            "Breathing": "30 min easy",
+            "How to Do It": "20 min stroll",
+            "undefined": "3 m easy"
+        },
+        {
+            "Pace": "2",
+            "Description": "Rest",
+            "Breathing": "30 min easy",
+            "How to Do It": "20 min stroll",
+            "undefined": "3 m easy"
+        },
+        {
+            "Pace": "3",
+            "Description": "Rest",
+            "Breathing": "35 min easy",
+            "How to Do It": "20 min stroll",
+            "undefined": "2 m brisk"
+        },
+        {
+            "Pace": "4",
+            "Description": "Rest",
+            "Breathing": "35 min easy",
+            "How to Do It": "25 min stroll",
+            "undefined": "5 m easy"
+        },
+        {
+            "Pace": "5",
+            "Description": "Rest",
+            "Breathing": "35 min easy",
+            "How to Do It": "25 min stroll",
+            "undefined": "6 m easy"
+        },
+        {
+            "Pace": "6",
+            "Description": "Rest",
+            "Breathing": "40 min easy",
+            "How to Do It": "25 min stroll",
+            "undefined": "4 m brisk"
+        },
+        {
+            "Pace": "7",
+            "Description": "Rest",
+            "Breathing": "40 min easy",
+            "How to Do It": "25 min stroll",
+            "undefined": "7 m easy"
+        },
+        {
+            "Pace": "8",
+            "Description": "Rest",
+            "Breathing": "40 min easy",
+            "How to Do It": "25 min stroll",
+            "undefined": "8 m easy"
+        },
+        {
+            "Pace": "9",
+            "Description": "Rest",
+            "Breathing": "45 min easy",
+            "How to Do It": "30 min stroll",
+            "undefined": "6 m brisk"
+        },
+        {
+            "Pace": "10",
+            "Description": "Rest",
+            "Breathing": "45 min easy",
+            "How to Do It": "30 min stroll",
+            "undefined": "9 m easy"
+        },
+        {
+            "Pace": "11",
+            "Description": "Rest",
+            "Breathing": "45 min easy",
+            "How to Do It": "30 min stroll",
+            "undefined": "10 m easy"
+        },
+        {
+            "Pace": "12",
+            "Description": "Rest",
+            "Breathing": "30 min easy",
+            "How to Do It": "20 min stroll",
+            "undefined": "Half Marathon"
+        }
+    ]
+}

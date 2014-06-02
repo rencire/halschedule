@@ -1,122 +1,127 @@
-[
-    {
-        "Week": "1",
-        "Mon": "3 m run + strength",
-        "Tue": "6 x hill",
-        "Wed": "3 m run + strength",
-        "Thu": "40 min tempo",
-        "Fri": "Rest",
-        "Sat": "3 m run",
-        "Sun": "90 min run (3/1)"
-    },
-    {
-        "Week": "2",
-        "Mon": "3 m run + strength",
-        "Tue": "7 x 400 5-K pace",
-        "Wed": "3 m run + strength",
-        "Thu": "45 min tempo",
-        "Fri": "Rest",
-        "Sat": "3 m pace",
-        "Sun": "90 min run"
-    },
-    {
-        "Week": "3",
-        "Mon": "3 m run + strength",
-        "Tue": "7 x hill",
-        "Wed": "3 m run + strength",
-        "Thu": "30 min tempo",
-        "Fri": "Rest or easy run",
-        "Sat": "Rest",
-        "Sun": "5-K Race"
-    },
-    {
-        "Week": "4",
-        "Mon": "3 m run + strength",
-        "Tue": "8 x 400 5-K pace",
-        "Wed": "3 m run + strength",
-        "Thu": "40 min tempo",
-        "Fri": "Rest",
-        "Sat": "3 m run",
-        "Sun": "90 min run (3/1)"
-    },
-    {
-        "Week": "5",
-        "Mon": "3 m run + strength",
-        "Tue": "8 x hill",
-        "Wed": "3 m run + strength",
-        "Thu": "45 min tempo",
-        "Fri": "Rest",
-        "Sat": "3 m pace",
-        "Sun": "90 min run"
-    },
-    {
-        "Week": "6",
-        "Mon": "3 m run + strength",
-        "Tue": "8 x 400 5-K pace",
-        "Wed": "3 m run + strength",
-        "Thu": "30 min tempo",
-        "Fri": "Rest or easy run",
-        "Sat": "Rest",
-        "Sun": "10-K Race"
-    },
-    {
-        "Week": "7",
-        "Mon": "3 m run + strength",
-        "Tue": "4 x 800 10-K pace",
-        "Wed": "3 m run + strength",
-        "Thu": "45 min tempo",
-        "Fri": "Rest",
-        "Sat": "4 m pace",
-        "Sun": "1:45 run (3/1)"
-    },
-    {
-        "Week": "8",
-        "Mon": "3 m run + strength",
-        "Tue": "3 x 1600 race pace",
-        "Wed": "3 m run + strength",
-        "Thu": "50 min tempo",
-        "Fri": "Rest",
-        "Sat": "5 m pace",
-        "Sun": "1:45 run"
-    },
-    {
-        "Week": "9",
-        "Mon": "3 m run + strength",
-        "Tue": "5 x 800 10-K pace",
-        "Wed": "3 m run + strength",
-        "Thu": "30 min tempo",
-        "Fri": "Rest or easy run",
-        "Sat": "Rest",
-        "Sun": "15-K Race"
-    },
-    {
-        "Week": "10",
-        "Mon": "3 m run + strength",
-        "Tue": "4 x 1600 race pace",
-        "Wed": "3 m run + strength",
-        "Thu": "55 min tempo",
-        "Fri": "Rest",
-        "Sat": "5 m pace",
-        "Sun": "2:00 run (3/1)"
-    },
-    {
-        "Week": "11",
-        "Mon": "3 m run + strength",
-        "Tue": "6 x 800 10-K pace",
-        "Wed": "3 m run + strength",
-        "Thu": "60 min tempo",
-        "Fri": "Rest",
-        "Sat": "3 m pace",
-        "Sun": "2:00 run"
-    },
-    {
-        "Week": "12",
-        "Mon": "3 m run + strength",
-        "Tue": "6 x 400 5-K pace",
-        "Wed": "2 m run + strength",
-        "Thu": "30 min tempo",
-        "Fri": "Rest",
-        "Sat": "Rest",
-        "Sun": "Half Marathon"
-    }
-]
+{
+    "type": "half",
+    "level": "advanced",
+    "num_days": 84,
+    "rows": [
+        {
+            "Week": "1",
+            "Mon": "3 m run + strength",
+            "Tue": "6 x hill",
+            "Wed": "3 m run + strength",
+            "Thu": "40 min tempo",
+            "Fri": "Rest",
+            "Sat": "3 m run",
+            "Sun": "90 min run (3/1)"
+        },
+        {
+            "Week": "2",
+            "Mon": "3 m run + strength",
+            "Tue": "7 x 400 5-K pace",
+            "Wed": "3 m run + strength",
+            "Thu": "45 min tempo",
+            "Fri": "Rest",
+            "Sat": "3 m pace",
+            "Sun": "90 min run"
+        },
+        {
+            "Week": "3",
+            "Mon": "3 m run + strength",
+            "Tue": "7 x hill",
+            "Wed": "3 m run + strength",
+            "Thu": "30 min tempo",
+            "Fri": "Rest or easy run",
+            "Sat": "Rest",
+            "Sun": "5-K Race"
+        },
+        {
+            "Week": "4",
+            "Mon": "3 m run + strength",
+            "Tue": "8 x 400 5-K pace",
+            "Wed": "3 m run + strength",
+            "Thu": "40 min tempo",
+            "Fri": "Rest",
+            "Sat": "3 m run",
+            "Sun": "90 min run (3/1)"
+        },
+        {
+            "Week": "5",
+            "Mon": "3 m run + strength",
+            "Tue": "8 x hill",
+            "Wed": "3 m run + strength",
+            "Thu": "45 min tempo",
+            "Fri": "Rest",
+            "Sat": "3 m pace",
+            "Sun": "90 min run"
+        },
+        {
+            "Week": "6",
+            "Mon": "3 m run + strength",
+            "Tue": "8 x 400 5-K pace",
+            "Wed": "3 m run + strength",
+            "Thu": "30 min tempo",
+            "Fri": "Rest or easy run",
+            "Sat": "Rest",
+            "Sun": "10-K Race"
+        },
+        {
+            "Week": "7",
+            "Mon": "3 m run + strength",
+            "Tue": "4 x 800 10-K pace",
+            "Wed": "3 m run + strength",
+            "Thu": "45 min tempo",
+            "Fri": "Rest",
+            "Sat": "4 m pace",
+            "Sun": "1:45 run (3/1)"
+        },
+        {
+            "Week": "8",
+            "Mon": "3 m run + strength",
+            "Tue": "3 x 1600 race pace",
+            "Wed": "3 m run + strength",
+            "Thu": "50 min tempo",
+            "Fri": "Rest",
+            "Sat": "5 m pace",
+            "Sun": "1:45 run"
+        },
+        {
+            "Week": "9",
+            "Mon": "3 m run + strength",
+            "Tue": "5 x 800 10-K pace",
+            "Wed": "3 m run + strength",
+            "Thu": "30 min tempo",
+            "Fri": "Rest or easy run",
+            "Sat": "Rest",
+            "Sun": "15-K Race"
+        },
+        {
+            "Week": "10",
+            "Mon": "3 m run + strength",
+            "Tue": "4 x 1600 race pace",
+            "Wed": "3 m run + strength",
+            "Thu": "55 min tempo",
+            "Fri": "Rest",
+            "Sat": "5 m pace",
+            "Sun": "2:00 run (3/1)"
+        },
+        {
+            "Week": "11",
+            "Mon": "3 m run + strength",
+            "Tue": "6 x 800 10-K pace",
+            "Wed": "3 m run + strength",
+            "Thu": "60 min tempo",
+            "Fri": "Rest",
+            "Sat": "3 m pace",
+            "Sun": "2:00 run"
+        },
+        {
+            "Week": "12",
+            "Mon": "3 m run + strength",
+            "Tue": "6 x 400 5-K pace",
+            "Wed": "2 m run + strength",
+            "Thu": "30 min tempo",
+            "Fri": "Rest",
+            "Sat": "Rest",
+            "Sun": "Half Marathon"
+        }
+    ]
+}

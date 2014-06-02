@@ -23,11 +23,11 @@ var dl_all = function(err, data) {
     // download all the json files individually
     for (var race_type in links) { // race_type is 'full', 'half', etc.
       var race_type_links = links[race_type];
-      for (var training_type in race_type_links) { // training_type is 'novice_1', 'intermediate_2', etc.
-        var url_link = race_type_links[training_type];
-        var file_name = out_dir + '/' + race_type + '_' + training_type + '.json';
+      for (var level_type in race_type_links) { // level_type is 'novice_1', 'intermediate_2', etc.
+        var url_link = race_type_links[level_type];
+        var file_name = out_dir + '/' + race_type + '_' + level_type + '.json';
 
-        scrape_table(url_link, (function(file){
+        scrape_table(url_link, race_type, level_type, (function(file){
           return function(json_table){
             fs.writeFile(file, JSON.stringify(json_table, null, 4), function(err){
               console.log( file + ' sucessfully written');
@@ -39,37 +39,14 @@ var dl_all = function(err, data) {
   });
 };
 
-//   // combine them into a all.json file
-//   var json_all_training_data = {};
-//   for (var race_type in links) { // race_type is 'full', 'half', etc.
-//     var race_type_links = links[race_type];
-//     json_all_training_data[race_type] = {};
-//
-//     for (var training_type in race_type_links) { // training_type is 'novice_1', 'intermediate_2', etc.
-//       var url_link = race_type_links[training_type];
-//         
-//       var file_name = out_dir + '/' + race_type + '_' + training_type + '.json';
-//       fs.readFile(file_name, 'utf8', function (err,data){
-//         console.log(race_type);
-//         console.log(training_type);
-//         console.log(file_name);
-//         json_all_training_data[race_type][training_type] = JSON.parse(data);
-//       });
-//     }
-//   }
-//
-//   // var file = out_dir + '/' + 'all.json';
-//   // fs.writeFile(file, JSON.stringify(json_all_training_data, null, 4), function(err){
-//   //   console.log( file + ' sucessfully written');
-//   // });         
-// });
 
 // scrape training table given url, hands json to callback function
-var scrape_table = function(url, callback) {
+var scrape_table = function(url, race_type, race_level, callback) {
   request(url, function(error, response, html){
     if(!error){
       var $ = cheerio.load(html);
 
+      json_data = {type: race_type, level:race_level, num_days:"", rows:""};
       rows = []
       $('.table-training tbody tr').filter(function(i){
         if(i === 0){
@@ -89,8 +66,11 @@ var scrape_table = function(url, callback) {
           rows.push(json_row);
         }
       });
-
-      callback(rows);
+      
+      json_data.rows = rows;
+      json_data.num_days = rows.length * 7; // 7 days a week 
+      
+      callback(json_data);
     }
   });
 };

@@ -35,9 +35,22 @@
 
 
         <div id="main" data-role="page">
+
+            <div id="main-panel" data-role="panel" >
+                <ul data-role="listview">
+                    <li data-icon="home"><a href="#main">Home</a></li>
+                    <!-- <li data&#45;role="list&#45;divider" data&#45;icon="gear">Settings</li> -->
+                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
+                    <li><a href="#train-plan">Current Training Plan</a></li>
+                    <li><a href="#">Some other settting</a></li>
+                </ul>
+            </div>
+
             <header data-role="header">
+                <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
                 <h1>Main Page</h1>
             </header>
+
             <div data-role="content">
                 <div class="ui-grad-a">
                     <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Week 1</div></div>
@@ -48,61 +61,40 @@
                         <h3>Today</h3>
                     </div>
                     <div class="ui-body ui-body-a">
-                        <p>run</p>
+                        <p id="today-plan"></p>
                     </div>
                 </div>
-
             </div>
+
             <footer data-role="footer" data-position="fixed">
                 <nav data-role="navbar">
-                    <ul>
-                        <li><a href="#main" data-icon="home">Home</a></li>
-                        <li><a href="#settings" data-icon="gear">Settings</a></li>
-                    </ull>
-                </nav>
+                                    </nav>
             </footer>
         </div><!-- /main page -->
 
 
         <div id="race-date" data-role="page">
+            <div id="main-panel" data-role="panel" >
+                <ul data-role="listview">
+                    <li data-icon="home"><a href="#main">Home</a></li>
+                    <!-- <li data&#45;role="list&#45;divider" data&#45;icon="gear">Settings</li> -->
+                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
+                    <li><a href="#train-plan">Current Training Plan</a></li>
+                    <li><a href="#">Some other settting</a></li>
+                </ul>
+            </div>
+
             <header data-role="header">
+                <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
                 <h1>Select Race Date</h1>
                 <!-- <a href="#settings" data&#45;icon="grid" data&#45;iconpos="notext" data&#45;transition="slide" data&#45;direction="reverse">settings</a> -->
             </header>
             <div data-role="content">
                 <input type="text" id="date-input" data-inline="true" data-role="date">
             </div><!-- /content -->
-            <footer data-role="footer" data-position="fixed">
-                <nav data-role="navbar">
-                    <ul>
-                        <li><a href="#main" data-icon="home">Home</a></li>
-                        <li><a href="#settings" data-icon="gear">Settings</a></li>
-                    </ull>
-                </nav>
-            </footer>
+
         </div> <!-- /race page -->
 
-
-        <div id="settings" data-role="page">
-            <header data-role="header">
-                <h1>Settings</h1>
-            </header>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true" data-filters="true">
-                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
-                    <li><a href="#train-plan">Current Training Plan</a></li>
-                    <li><a href="#">Some other settting</a></li>
-                </ul>
-            </div>
-            <footer data-role="footer" data-position="fixed">
-                <nav data-role="navbar">
-                    <ul>
-                        <li><a href="#main" data-icon="home">Home</a></li>
-                        <li><a href="#settings" data-icon="gear">Settings</a></li>
-                    </ull>
-                </nav>
-            </footer>
-        </div><!-- /settings page -->
 
 
 
