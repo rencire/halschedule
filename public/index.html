@@ -87,7 +87,6 @@
             <header data-role="header">
                 <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
                 <h1>Select Race Date</h1>
-                <!-- <a href="#settings" data&#45;icon="grid" data&#45;iconpos="notext" data&#45;transition="slide" data&#45;direction="reverse">settings</a> -->
             </header>
             <div data-role="content">
                 <input type="text" id="date-input" data-inline="true" data-role="date">
@@ -96,6 +95,40 @@
         </div> <!-- /race page -->
 
 
+        <div id="train-plan" data-role="page">
+            <div id="main-panel" data-role="panel" >
+                <ul data-role="listview">
+                    <li data-icon="home"><a href="#main">Home</a></li>
+                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
+                    <li><a href="#train-plan">Current Training Plan</a></li>
+                    <li><a href="#">Some other settting</a></li>
+                </ul>
+            </div>
+
+            <header data-role="header">
+                <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
+                <h1>Select Race Date</h1>
+            </header>
+            <div data-role="content">
+                <label for="select-race-type" class="select">Race:</label>
+                <select name="select-race-type" id="select-race-type">
+                    <option value="full">Full</option>
+                    <option value="half">Half</option>
+                </select>
+                <label for="select-race-level" class="select">Level:</label>
+                <select name="select-race-level" id="select-race-level">
+                    <option value="novice_supreme">Novice supreme</option>
+                    <option value="novice_1">Novice 1</option>
+                    <option value="novice_2">Novice 2</option>
+                    <option value="intermediate_1">Intermediate 1</option>
+                    <option value="intermediate_2">Intermediate 2</option>
+                    <option value="advanced_1">Advanced 1</option>
+                    <option value="advanced_2">Advanced 2</option>
+                </select>
+
+            </div><!-- /content -->
+
+        </div> <!-- /race page -->
 
 
         <script src="js/plugins.js"></script>

@@ -6,6 +6,13 @@ var app = express();
 
 app.use(express.static(__dirname + '/public'));
 
+app.get('/api/links.json', function(req, res){
+  fs.readFile('./links.json', function(err, data){
+    res.set('Content-Type', 'application/json');
+    res.send(data);
+  });
+});
+
 app.get('/api', function(req, res){
   var race = req.param('race');
   var level = req.param('level');
