@@ -19,9 +19,9 @@
         <link rel="stylesheet" href="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.css" />
 
 
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
 
         <script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
         <!-- <script src="http://code.jquery.com/mobile/git/jquery.mobile&#45;git.js"></script> -->
@@ -31,6 +31,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
 
         <div id="main-panel" data-role="panel" data-theme="a" >
             <ul data-role="listview">
@@ -43,7 +44,28 @@
         </div>
 
 
-        <div id="begin-popup" data-role="page" >
+        <div id="main" data-role="page">
+            <header data-role="header">
+                <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
+                <h1>Main Page</h1>
+            </header>
+
+            <div data-role="content">
+                <div id=#current-week></div>
+                <div id="days-left"></div>
+                <div id="today-plan">
+                    <h2>Today's Workout:</h2>
+                    <p></p>
+                </div>
+            </div>
+
+            <footer data-role="footer" data-position="fixed">
+                <nav data-role="navbar">
+                                    </nav>
+            </footer>
+        </div><!-- /main page -->
+
+        <div id="init-setup" data-role="page" >
             <h1>When is your race?</h1>
             <div data-role="content">
                 <input type="text" id="init-date-input" data-inline="true" data-role="date">
@@ -68,27 +90,6 @@
         </div>
 
 
-        <div id="main" data-role="page">
-            <header data-role="header">
-                <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
-                <h1>Main Page</h1>
-            </header>
-
-            <div data-role="content">
-                <div id=#current-week></div>
-                <div id="days-left"></div>
-                <div id="today-plan">
-                    <h1>Today</h3>
-                    <p></p>
-                </div>
-            </div>
-
-            <footer data-role="footer" data-position="fixed">
-                <nav data-role="navbar">
-                                    </nav>
-            </footer>
-        </div><!-- /main page -->
-
 
         <div id="race-date" data-role="page">
             <header data-role="header">
@@ -96,7 +97,7 @@
                 <h1>Select Race Date</h1>
             </header>
             <div data-role="content">
-                <input type="text" class=".date-input" data-inline="true" data-role="date">
+                <input type="text" id="date-input" data-inline="true" data-role="date">
             </div><!-- /content -->
 
         </div> <!-- /race page -->
@@ -105,7 +106,7 @@
         <div id="train-plan" data-role="page">
             <header data-role="header">
                 <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
-                <h1>Select Race Date</h1>
+                <h1>Select Race Level</h1>
             </header>
             <div data-role="content">
                 <label for="select-race-type" class="select">Race:</label>
