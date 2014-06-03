@@ -49,6 +49,11 @@ var load_race_date_page = function() {
 }
 
 var load_train_plan_page = function() {
+
+}
+
+var update_train_plan_page = function(race_options, level_options) {
+
 }
 
 var save_race_date_page = function() {
@@ -94,17 +99,10 @@ var fetch_training_json = function(race_type, race_level, callback) {
 }
 
 var fetch_option_vals = function() {
-    req_url = 'api/links.json';
+    req_url = 'api/training_list';
     $.getJSON(req_url, function(data){
-        var ret = {};
-        for (var race in data) {
-            var levels = []
-            for (var level in data[race]){
-                levels.push(level);
-            }
-            ret[race] = levels;
-        }
-        window.localStorage.setObject('option_vals', ret);
+        console.log(data);
+        window.localStorage.setObject('option_vals', data);
     });
 }
 

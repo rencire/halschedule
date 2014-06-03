@@ -6,10 +6,22 @@ var app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/api/links.json', function(req, res){
+app.get('/api/training_list', function(req, res){
   fs.readFile('./links.json', function(err, data){
+    var list = JSON.parse(data);
+
+    var ret = {};
+    for (var race in list) {
+      var levels = []
+      for (var level in list[race]){
+        levels.push(level);
+      }
+      ret[race] = levels;
+    }
+
+    console.log(ret);
     res.set('Content-Type', 'application/json');
-    res.send(data);
+    res.send(ret);
   });
 });
 
