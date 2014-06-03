@@ -32,37 +32,54 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="main-panel" data-role="panel" data-theme="a" >
+            <ul data-role="listview">
+                <li data-icon="home"><a href="#main" data-transition="none">Home</a></li>
+                <!-- <li data&#45;role="list&#45;divider" data&#45;icon="gear">Settings</li> -->
+                <li><a href="#race-date" data-transition="none">Choose Race Date</a></li>
+                <li><a href="#train-plan" data-transition="none">Current Training Plan</a></li>
+                <li><a href="#">Some other settting</a></li>
+            </ul>
+        </div>
+
+
+        <div id="begin-popup" data-role="page" >
+            <h1>When is your race?</h1>
+            <div data-role="content">
+                <input type="text" id="init-date-input" data-inline="true" data-role="date">
+
+                <label for="select-race-type" class="select">What type of Race? </label>
+                <select name="select-race-type" class="select-race-type">
+                    <option value="full">Full</option>
+                    <option value="half">Half</option>
+                </select>
+                <label for="select-race-level" class="select">Which training program?</label>
+                <select name="select-race-level" class="select-race-level">
+                    <option value="novice_supreme">Novice supreme</option>
+                    <option value="novice_1">Novice 1</option>
+                    <option value="novice_2">Novice 2</option>
+                    <option value="intermediate_1">Intermediate 1</option>
+                    <option value="intermediate_2">Intermediate 2</option>
+                    <option value="advanced_1">Advanced 1</option>
+                    <option value="advanced_2">Advanced 2</option>
+                </select>
+                <a id="save-init-settings" href="#main" class="ui-btn" >Save</a>
+            </div><!-- /content -->
+        </div>
 
 
         <div id="main" data-role="page">
-
-            <div id="main-panel" data-role="panel" >
-                <ul data-role="listview">
-                    <li data-icon="home"><a href="#main">Home</a></li>
-                    <!-- <li data&#45;role="list&#45;divider" data&#45;icon="gear">Settings</li> -->
-                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
-                    <li><a href="#train-plan">Current Training Plan</a></li>
-                    <li><a href="#">Some other settting</a></li>
-                </ul>
-            </div>
-
             <header data-role="header">
                 <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
                 <h1>Main Page</h1>
             </header>
 
             <div data-role="content">
-                <div class="ui-grad-a">
-                    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Week 1</div></div>
-                    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Days Left: 90</div></div>
-                </div>
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
-                        <h3>Today</h3>
-                    </div>
-                    <div class="ui-body ui-body-a">
-                        <p id="today-plan"></p>
-                    </div>
+                <div id=#current-week></div>
+                <div id="days-left"></div>
+                <div id="today-plan">
+                    <h1>Today</h3>
+                    <p></p>
                 </div>
             </div>
 
@@ -74,49 +91,30 @@
 
 
         <div id="race-date" data-role="page">
-            <div id="main-panel" data-role="panel" >
-                <ul data-role="listview">
-                    <li data-icon="home"><a href="#main">Home</a></li>
-                    <!-- <li data&#45;role="list&#45;divider" data&#45;icon="gear">Settings</li> -->
-                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
-                    <li><a href="#train-plan">Current Training Plan</a></li>
-                    <li><a href="#">Some other settting</a></li>
-                </ul>
-            </div>
-
             <header data-role="header">
                 <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
                 <h1>Select Race Date</h1>
             </header>
             <div data-role="content">
-                <input type="text" id="date-input" data-inline="true" data-role="date">
+                <input type="text" class=".date-input" data-inline="true" data-role="date">
             </div><!-- /content -->
 
         </div> <!-- /race page -->
 
 
         <div id="train-plan" data-role="page">
-            <div id="main-panel" data-role="panel" >
-                <ul data-role="listview">
-                    <li data-icon="home"><a href="#main">Home</a></li>
-                    <li><a href="#race-date" data-transition="slide">Choose Race Date</a></li>
-                    <li><a href="#train-plan">Current Training Plan</a></li>
-                    <li><a href="#">Some other settting</a></li>
-                </ul>
-            </div>
-
             <header data-role="header">
                 <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
                 <h1>Select Race Date</h1>
             </header>
             <div data-role="content">
                 <label for="select-race-type" class="select">Race:</label>
-                <select name="select-race-type" id="select-race-type">
+                <select name="select-race-type" class="select-race-type">
                     <option value="full">Full</option>
                     <option value="half">Half</option>
                 </select>
                 <label for="select-race-level" class="select">Level:</label>
-                <select name="select-race-level" id="select-race-level">
+                <select name="select-race-level" class="select-race-level">
                     <option value="novice_supreme">Novice supreme</option>
                     <option value="novice_1">Novice 1</option>
                     <option value="novice_2">Novice 2</option>
