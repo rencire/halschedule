@@ -62,16 +62,12 @@ var load_select_options = function(page, training_list, race_type, race_level) {
 
 var load_race_date_page = function() {
     var race_date = window.localStorage.getItem('race_date');
-    console.log(race_date);
-    $('#date-input').val(race_date);
+    $('#date-input').val(race_date).trigger('change');
 }
 
 var save_race_date_page = function() {
     var old_race_date = window.localStorage.getItem('race_date');
     var new_race_date = $('#date-input').val();
-
-    console.log('old ' + old_race_date);
-    console.log('new ' + new_race_date);
 
     if (old_race_date !== new_race_date) {
         window.localStorage.setItem('race_date', new_race_date);
@@ -168,8 +164,6 @@ $('#train-plan').on('pagebeforecreate', function(){
 $('#race-date').on('pagebeforecreate', function(){
 
     var race_date = window.localStorage.getItem('race_date');
-    console.log($('#date-input'));
-    console.log('val: ' + $('#date-input').val());
 
     // When date input changes, save the changed value to localStorage.
     //
@@ -208,7 +202,6 @@ $('#init-setup').on('pagebeforecreate', function(e) {
 
 // Page transition events
 $(document).on('pagecontainerbeforetransition', function(e, ui) {
-    console.log('pcbeforetransition');
     switch (ui.toPage[0].id) {
         case 'main':
             load_main_page();
@@ -221,8 +214,6 @@ $(document).on('pagecontainerbeforetransition', function(e, ui) {
 });
 
 $(document).on('pagecontainerbeforeload', function(e, ui) {
-    console.log('beforeload');
-    console.log('val: ' + $('#date-input').val());
 
     if (ui.prevPage[0]) {
         switch(ui.prevPage[0].id) {
@@ -231,8 +222,6 @@ $(document).on('pagecontainerbeforeload', function(e, ui) {
 });
 
 $(document).on('pagecontainerload', function(e, ui) {
-    console.log('load');
-    console.log('val: ' + $('#date-input').val());
 
     if (ui.prevPage[0]) {
         switch(ui.prevPage[0].id) {
@@ -241,8 +230,6 @@ $(document).on('pagecontainerload', function(e, ui) {
 });
 
 $(document).on('pagecontainereshow', function(e, ui) {
-    console.log('show');
-    console.log('val: ' + $('#date-input').val());
 
     if (ui.prevPage[0]) {
         switch(ui.prevPage[0].id) {
@@ -251,13 +238,6 @@ $(document).on('pagecontainereshow', function(e, ui) {
 });
 
 $(document).on('pagecontainerbeforeshow', function(e, ui) {
-    console.log('beforeshow');
-    // console.log(ui);
-    // console.log('val: ' + $('#date-input').val());
-    //
-    //
-    console.log('val: ' + $('#date-input').val());
-    $('#date-input').trigger('change');
 
     if (ui.prevPage[0]) {
         switch(ui.prevPage[0].id) {
