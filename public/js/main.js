@@ -7,8 +7,8 @@
 
 // App should request training_plan first, and then training_data.
 
-
-var day_of_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+// used for counting how many days left until Sun (assumed race day)
+var day_of_week = ['Sun', 'Sat', 'Fri', 'Thu', 'Wed', 'Tue', 'Mon'];
 
 // race_type optional
 var gen_race_options = function(training_list, race_type){
@@ -61,10 +61,10 @@ var gen_level_options = function(training_list, race_type, race_level) {
 };
 
 
-var get_diff_days = function(date_1, date_2){
+var get_diff_days = function(date_start, date_end){
 
     var one_day = 24*60*60*1000;
-    var diff_in_days = Math.abs((date_1.getTime() - date_2.getTime()) / (one_day));
+    var diff_in_days = (date_end.getTime() - date_start.getTime()) / (one_day);
     return Math.ceil(diff_in_days);
 };
 
@@ -74,28 +74,46 @@ var to_title = function(str){
 };
 
 
+// Calculate days before Race day, and count back to find today's training program.
+// A lot of number manipulation because the data format isn't exactly what we want.
+// We would like to count back from the race day to figure out what the training plan 
+// for today is, but the data ties training plans together with day of the week.
+// 
+// See json_training_data representation given from server.
 var update_main_page = function(json_training_data) {
     var date_today = new Date();
     var date_race = new Date(window.localStorage.getItem('race_date'));
 
     var diff_days = get_diff_days(date_today, date_race);
-    if (diff_days > json_training_data.num_days) {
+
+    var total_weeks = json_training_data.rows.length;
+
+    $('#days-left').text(diff_days);
+    $('#total-weeks').text(total_weeks);
+
+    if (diff_days < 0) {
+        $('#cur-week').text(0);
+        $('#today-plan p').text('Race Day already passed, try setting a new date?'); 
+        return;
+    }
+
+    var extra_days = diff_days - json_training_data.num_days;
+    if (extra_days > 0) {
         // today's date before start of selected training program.
-        $('#today-plan p').text('still have time before training plan starts'); // should actually only do this
+        $('#cur-week').text(0);
+        $('#today-plan p').text(extra_days + ' days before training plan starts.'); // should actually only do this
         return;
     }
 
     var completed_days = (json_training_data.num_days - diff_days);
     var current_week = Math.ceil(completed_days / 7);
-    var total_weeks = json_training_data.rows.length;
-
     var json_row = json_training_data.rows[current_week-1];
-    var today_workout = json_row[day_of_week[date_today.getDay()]];
-    
-    $('#today-plan p').text(today_workout); // should actually only do this
-    $('#days-left').text(diff_days);
+    var days_from_end_of_week = (diff_days  % 7); 
+
+    var today_workout = json_row[day_of_week[days_from_end_of_week]];
+
+    $('#today-plan p').text(today_workout); 
     $('#cur-week').text(current_week);
-    $('#total-weeks').text(total_weeks);
 
 };
 
