@@ -65,13 +65,26 @@
             </header>
 
             <div data-role="content">
-                <div id=#current-week></div>
-                <div id="days-left"></div>
-                <div id="today-plan">
-                    <h2>Today's Workout:</h2>
-                    <p></p>
+              <div class="ui-grid-a">
+                <div class="ui-block-a">
+                  <div class="ui-bar ">
+                    <h2>Week</h2>
+                    <p><span id='cur-week'></span> / <span id='total-weeks'></span> </p>
+                  </div>
                 </div>
-            </div>
+                <div class="ui-block-b">
+                  <div class="ui-bar">
+                    <h2>Days Left</h2>
+                      <p id='days-left'></p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="today-plan">
+                  <h2>Today's Workout:</h2>
+                  <p></p>
+              </div>
+            </div> <!-- /content -->
 
             <footer data-role="footer" data-position="fixed">
                 <nav data-role="navbar">

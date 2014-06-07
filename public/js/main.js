@@ -87,11 +87,15 @@ var update_main_page = function(json_training_data) {
 
     var completed_days = (json_training_data.num_days - diff_days);
     var current_week = Math.ceil(completed_days / 8);
+    var total_weeks = json_training_data.rows.length;
 
     var json_row = json_training_data.rows[current_week-1];
     var today_workout = json_row[day_of_week[date_today.getDay()]];
     
     $('#today-plan p').text(today_workout); // should actually only do this
+    $('#days-left').text(diff_days);
+    $('#cur-week').text(current_week);
+    $('#total-weeks').text(total_weeks);
 
 };
 
