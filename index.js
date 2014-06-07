@@ -42,7 +42,7 @@ app.get('/api', function(req, res){
   }
 });
 
-app.listen('8080');
-console.log('Listening on port 8080');
+app.listen('8888');
+console.log('Listening on port 8888');
 
 exports = module.exports = app;
