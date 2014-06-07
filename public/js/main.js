@@ -221,7 +221,6 @@ $('#init-setup').on('pagebeforecreate', function(e) {
 });
 
 $('#main').on('pagebeforecreate', function(e) {
-    $('[data-role=panel]').panel().enhanceWithin();
 });
 
 $('#train-plan').on('pagebeforecreate', function(){
@@ -259,6 +258,9 @@ $('#race-date').on('pagebeforecreate', function(){
 });
 
 $(document).on('pagebeforecreate', function(e){
+
+    // Whenever a new page gets created (user could refresh any page), init external panel.
+    $('[data-role=panel]').panel().enhanceWithin();
 
     // Add select handler to all .select-race-type in app.
     // Changes level select options based on currently selected race type.

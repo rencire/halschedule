@@ -16,7 +16,7 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
         <link rel="stylesheet"  href="http://code.jquery.com/mobile/git/jquery.mobile-git.css" />
-        <link rel="stylesheet" href="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.css" />
+        <link rel="stylesheet" href="https://rawgithub.com/rencire/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.css" />
 
 
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
@@ -25,7 +25,7 @@
 
         <script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
         <!-- <script src="http://code.jquery.com/mobile/git/jquery.mobile&#45;git.js"></script> -->
-        <script src="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.js"></script>
+        <script src="https://rawgithub.com/rencire/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -46,7 +46,9 @@
         <div id="init-setup" data-role="page" >
             <h1>When is your race?</h1>
             <div data-role="content">
-                <input type="text" id="init-date-input" data-inline="true" data-role="date">
+                <div class="date-content">
+                  <input type="text" id="init-date-input" data-inline="true" data-role="date">
+                </div>
 
                 <label for="select-race-type" class="select">What type of Race? </label>
                 <select name="select-race-type" class="select-race-type">
@@ -54,7 +56,7 @@
                 <label for="select-race-level" class="select">Which training program?</label>
                 <select name="select-race-level" class="select-race-level">
                 </select>
-                <a id="save-init-settings" href="#main" class="ui-btn" >Save</a>
+                <a id="save-init-settings" href="#main" class="ui-btn ui-btn-b">Save</a>
             </div><!-- /content -->
         </div>
 
@@ -114,7 +116,7 @@
         <div id="train-plan" data-role="page">
             <header data-role="header">
                 <a href="#main-panel" data-iconpos="notext" data-icon="bars">Panel</a>
-                <h1>Select Race Level</h1>
+                <h1>Select Race and Level</h1>
             </header>
             <div data-role="content">
                 <label for="select-race-type" class="select">Race:</label>

@@ -84,6 +84,25 @@ div#today-plan p {
     font-size: 3em;
 }
 
+a#save-init-settings {
+    margin-top: 3em;
+}
+
+#init-setup h1 {
+    text-align:center;
+}
+
+#init-date-input, #date-input {
+    text-align: center;
+}
+#init-setup label {
+    text-align:center;
+    font-weight: bold;
+    font-size:1.75em;
+    margin-top:2em;
+}
+
+
 
 
 
