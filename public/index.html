@@ -21,7 +21,7 @@
 
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.js"></script>
 
         <script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
         <!-- <script src="http://code.jquery.com/mobile/git/jquery.mobile&#45;git.js"></script> -->
@@ -43,6 +43,20 @@
             </ul>
         </div>
 
+        <div id="init-setup" data-role="page" >
+            <h1>When is your race?</h1>
+            <div data-role="content">
+                <input type="text" id="init-date-input" data-inline="true" data-role="date">
+
+                <label for="select-race-type" class="select">What type of Race? </label>
+                <select name="select-race-type" class="select-race-type">
+                </select>
+                <label for="select-race-level" class="select">Which training program?</label>
+                <select name="select-race-level" class="select-race-level">
+                </select>
+                <a id="save-init-settings" href="#main" class="ui-btn" >Save</a>
+            </div><!-- /content -->
+        </div>
 
         <div id="main" data-role="page">
             <header data-role="header">
@@ -65,20 +79,7 @@
             </footer>
         </div><!-- /main page -->
 
-        <div id="init-setup" data-role="page" >
-            <h1>When is your race?</h1>
-            <div data-role="content">
-                <input type="text" id="init-date-input" data-inline="true" data-role="date">
 
-                <label for="select-race-type" class="select">What type of Race? </label>
-                <select name="select-race-type" class="select-race-type">
-                </select>
-                <label for="select-race-level" class="select">Which training program?</label>
-                <select name="select-race-level" class="select-race-level">
-                </select>
-                <a id="save-init-settings" href="#main" class="ui-btn" >Save</a>
-            </div><!-- /content -->
-        </div>
 
 
 
