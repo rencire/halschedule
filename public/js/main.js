@@ -86,7 +86,7 @@ var update_main_page = function(json_training_data) {
     }
 
     var completed_days = (json_training_data.num_days - diff_days);
-    var current_week = Math.ceil(completed_days / 8);
+    var current_week = Math.ceil(completed_days / 7);
     var total_weeks = json_training_data.rows.length;
 
     var json_row = json_training_data.rows[current_week-1];
