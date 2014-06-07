@@ -192,7 +192,6 @@ var fetch_training_list = function(callback) {
 // Event bindings for #init-setup page
 $('#init-setup').on('pagebeforecreate', function(e) {
 
-    $('[data-role=panel]').panel().enhanceWithin();
 
     var that = this;
     fetch_training_list(function(data){
@@ -222,7 +221,7 @@ $('#init-setup').on('pagebeforecreate', function(e) {
 });
 
 $('#main').on('pagebeforecreate', function(e) {
-
+    $('[data-role=panel]').panel().enhanceWithin();
 });
 
 $('#train-plan').on('pagebeforecreate', function(){

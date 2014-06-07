@@ -75,6 +75,17 @@ textarea {
     border-bottom-right-radius: inherit;
 }
 
+section#workout {
+    margin: 5em auto 0 auto;
+    text-align: center;
+}
+
+div#today-plan p {
+    font-size: 3em;
+}
+
+
+
 
 
 
